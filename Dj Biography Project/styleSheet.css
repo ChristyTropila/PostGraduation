@@ -15,12 +15,23 @@ header, footer {
 
 h1 {
   font-size: 2.5em;
+  text-decoration: underline;
+  font-weight: none;
 }
 
 nav {
+
   border-top: 3px dashed #546a7b;
   border-bottom: 3px dashed #546a7b;
   margin-top: 4px;
+
+
+
+}
+
+nav a{
+    text-decoration: underline;
+      color: lemonchiffon;
 }
 
 label, fieldset {
@@ -84,6 +95,7 @@ table, th, td {
   border-collapse: collapse;
   padding: 5px 0px 5px 10px;
   text-align: left;
+  font-size: 1.2em;
 }
 
 table {
@@ -98,19 +110,20 @@ tbody tr:nth-child(even) {
   background-color: lemonchiffon;
 }
 
+tbody a{
+  color: black;
+}
+
 tbody tr:nth-child(odd) {
   background-color: #5b7d87;
 }
 
 a {
   font-family: monospace;
-  text-decoration: underline;
-  font-weight: none;
+
 }
 
-a:link {
-  color: lemonchiffon;
-}
+
 
 a:visited {
   color: black;
@@ -125,19 +138,14 @@ a:hover {
 a:active {
   font-weight: bold;
 }
+nav {
+    border-top: thin #5b7d87 solid;
+    border-bottom: thin #5b7d87 solid;
+    padding-top: 12px;
+    padding-bottom: 12px;
 
-nav a {
-  background-color: #5b7d87;
-  color: #fef9ff;
-  padding: 8px;
-  border: thin solid #0d1f2d;
-  text-decoration: none;
-  text-align: center;
-  display: block;
-  margin: 20px;
-  width: 100px;
-  float: left;
 }
+
 
 nav a:hover {
   background-color: #fef9ff;
@@ -150,4 +158,64 @@ nav a:active {
 
 nav a:visited {
   color: #e4c3ad;
+}
+
+
+/*ticket form css styling */
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
 }
