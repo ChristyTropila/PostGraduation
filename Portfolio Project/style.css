@@ -211,3 +211,48 @@ footer{
   }
 
 }
+
+/*contact */
+
+.my-form{
+  padding:100px;
+
+
+
+
+
+}
+.my-form .form-group{
+  padding-bottom:15px;
+}
+
+.my-form label{
+  display:block;
+  position: relative;
+}
+
+.my-form input[type="text"], .my-form textarea{
+  padding: 8px;
+  width:48%;
+
+}
+
+.my-form input[type="submit"]{
+  background-color: #333;
+  color: var(--light);
+  padding:10px 15px;
+  border:none;
+}
+.my-form input[type="submit"]:hover{
+  color: #fff;
+  
+}
+
+.contact{
+  background: url("img/pink.jpg");
+  background-repeat: no-repeat;
+   background-position: center top;
+   position: relative;
+
+
+}
